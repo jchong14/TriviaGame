@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia Game</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+<body background="assets/images/movies.jpg">
+	
+    <div id="startscreen">
+            <h3>It's Time For A</h3>
+            <h1>Movie Trivia!</h1>
+            <p>You have 60 seconds to answer 10 questions!!</p>
+            <p>Click To Start</p>
+            <button id="start-btn">Let's Rock N' Roll!</button>
+    </div>
+
+    <div id="results" class="hide">
+            <h2>Your Results</h2>
+            <p>Correct Answers:<span id="correctAnswers"></span></p>
+            <p>Wrong Answers:<span id="wrongAnswers"></span></p>
+            <p>Unanswered Questions:<span id="unanswered"></span></p>
+        </div>
+    </div>
+
+    <div id="questions" class="hide">
+        <h1>Movie Trivia!</h1>
+        <div id="time" class="hide"></div>
+        <section id="questionslist"></section>
+        <button id="submit">Submit</button>
+    </div>
+
+    
+
+
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+    <script type="text/javascript" src= "assets/javascript/app.js">
+		
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

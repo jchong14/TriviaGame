@@ -1,0 +1,62 @@
+body {
+    background-size: 100%;
+}
+
+#time {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    font-size: 24px;
+    margin:auto;
+}
+
+#startscreen {
+    background-color: yellow;
+    width: 325px;
+    height: 270px;
+    text-align: center;
+    margin: auto;
+    margin-top: 160px;
+    padding-top: 15px;
+    border-color: chocolate;
+    border-width: 5px;
+    border-style: dotted;
+    font-family: 'Shrikhand', 'cursive';
+}
+
+#results {
+    background-color: yellow;
+    width: 325px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+    margin-top: 200px;
+    padding-top: 15px;
+    border-color: chocolate;
+    border-width: 5px;
+    border-style: dotted;
+    font-family: 'Shrikhand', 'cursive';
+}
+
+#questions {
+    background-color: yellow;
+    width: 600px;
+    height: 1000px;
+    text-align: center;
+    margin: auto;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding-top: 15px;
+    border-color: chocolate;
+    border-width: 5px;
+    border-style: dotted;
+    font-family: 'Shrikhand', 'cursive';
+}
+
+#submit {
+    margin: 0 auto;
+}
+
+.hide {
+    display: none;
+} 
