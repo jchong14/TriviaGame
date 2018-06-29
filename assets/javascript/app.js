@@ -1,4 +1,4 @@
-var seconds = 5;
+var seconds = 60;
 var timer;
 var correct = 0;
 var wrong = 0;
@@ -9,7 +9,7 @@ function startTimer(){
     seconds = seconds - 1;
     $('#time').text(seconds);
     if (seconds <= 0) {
-        // @dev hide startscreen and questions
+        // @dev hide startscreen and questions //if the timer hits 0 seconds it will show the correct and wrong answers on the results page
         $('#questions').addClass('hide');
 
         clearInterval(timer);
@@ -82,14 +82,14 @@ function startTimer(){
         $('#wrongAnswers').text(wrong);
     }
 }
-
+//when you click on start button it hides the startscreen and shows the questions and timer
 $('#start-btn').on('click', function(){
     timer = setInterval(startTimer, 1000); 
     $('#startscreen').addClass('hide');
     $('#questions').removeClass('hide'); 
     $('#time').removeClass('hide');
 });
-
+//when you click submit it will hide the questions and show the results page. Then it will show the number of correct and wrong answers
 $('#submit').on('click', function() {
     clearInterval(timer);
     $('#results').removeClass('hide');
@@ -161,7 +161,7 @@ $('#submit').on('click', function() {
     $('#correctAnswers').text(correct);
     $('#wrongAnswers').text(wrong);
 })
-
+//object of questions and answers
 var questions = [{
     q: "1. Who was the highest paid actor in 2017?",
     answers: {
@@ -243,7 +243,7 @@ var questions = [{
     name: "Forrest Gump",
 }
 ]
-
+//loops through the object, creates div and paragraph tags, appends the questions to the tags, then appends to the ID
 var div, question_text, paragraph;
 for (var index in questions){
     question_text = questions[index].q;
@@ -252,7 +252,7 @@ for (var index in questions){
     paragraph.text(question_text);
     div.append(paragraph);
     $('#questionslist').append(div);
-
+//loops through the object within the object (answers), then adds the answers to the buttons, then appends it to the ID
     for (letter in questions[index].answers){
         choices = questions[index].answers[letter];
         var createChoices = $('<input type="radio" name="'+ questions[index].name +'" id="'+ choices +'"><label></label>');
