@@ -40,8 +40,8 @@ body {
 
 #questions {
     background-color: yellow;
-    width: 600px;
-    height: 1000px;
+    width: 700px;
+    height: 925px;
     text-align: center;
     margin: auto;
     margin-top:20px;
@@ -55,6 +55,7 @@ body {
 
 #submit {
     margin: 0 auto;
+    margin-top:15px;
 }
 
 .hide {
