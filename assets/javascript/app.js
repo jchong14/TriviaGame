@@ -1,4 +1,4 @@
-var seconds = 60;
+var seconds = 5;
 var timer;
 var correct = 0;
 var wrong = 0;
@@ -10,14 +10,76 @@ function startTimer(){
     $('#time').text(seconds);
     if (seconds <= 0) {
         // @dev hide startscreen and questions
-        $('#startscreen').addClass('hide');
         $('#questions').addClass('hide');
-
 
         clearInterval(timer);
         $('#results').removeClass('hide');
         seconds = 0;
         $('#time').text(seconds);
+    
+        if($("#Mark_Wahlberg").is(':checked')) {
+            correct++;
+        }
+        else {
+            wrong++;
+        }
+        if($("#2004").is(':checked')) {
+            correct++;
+        }
+        else {
+            wrong++;
+        }
+        if($("#Avatar").is(':checked')) {
+            correct++;
+        }
+        else {
+            wrong++;
+        }
+        if($("#11").is(':checked')) {
+            correct++;
+        }
+        else {
+            wrong++;
+        }
+        if($("#Sid").is(':checked')) {
+            correct++;
+        }
+        else {
+            wrong++;
+        }
+        if($("#Snakes").is(':checked')) {
+            correct++;
+        }
+        else {
+            wrong++;
+        }
+        if($("#Bruce_Willis").is(':checked')) {
+            correct++;
+        }
+        else {
+            wrong++;
+        }
+        if($("#No_Worries").is(':checked')) {
+            correct++;
+        }
+        else {
+            wrong++;
+        }
+        if($("#Cow").is(':checked')) {
+            correct++;
+        }
+        else {
+            wrong++;
+        }
+        if($("#Forrest_Gump").is(':checked')) {
+            correct++;
+        }
+        else {
+            wrong++;
+        }
+    
+        $('#correctAnswers').text(correct);
+        $('#wrongAnswers').text(wrong);
     }
 }
 
